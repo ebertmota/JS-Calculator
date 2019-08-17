@@ -2,43 +2,45 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, user-scalabe=no" />
+        <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/main.css" />
         <title>JS Calculator</title>
     </head>
     <body>
         <main id="container">
-            <h1>JS Calculator</h1>
+        <h1 class="title">JS Calculator</h1>
+        <input type="text" id="display" placeholder="" autocomplete="off" >
+          <div class="column">  
+                <div id="numbersColumn1">
+                    <button class="btn">7</button>
+                    <button class="btn">4</button>
+                    <button class="btn">1</button>
+                    <button class="btn">0</button>
+                </div>
 
-            <div id="numbersColumn1">
-                <button class="btn">7</button>
-                <button class="btn">4</button>
-                <button class="btn">1</button>
-                <button class="btn">0</button>
-            </div>
+                <div id="numbersColumn2">
+                    <button class="btn">8</button>
+                    <button class="btn">5</button>
+                    <button class="btn">2</button>
+                    <button class="btn">+</button>
+                </div>
 
-            <div id="numbersColumn2">
-                <button class="btn">8</button>
-                <button class="btn">5</button>
-                <button class="btn">2</button>
-                <button class="btn">+</button>
-            </div>
+                <div id="numbersColumns3">
+                    <button class="btn">9</button>
+                    <button class="btn">6</button>
+                    <button class="btn">3</button>
+                    <button class="btn">,</button>
+                </div>
 
-            <div id="numbersColumns3">
-                <button class="btn">9</button>
-                <button class="btn">6</button>
-                <button class="btn">3</button>
-                <button class="btn">,</button>
+                <div id="operators">
+                    <button class="btn">-</button>
+                    <button class="btn">*</button>
+                    <button class="btn">/</button>
+                    <button class="btn">=</button>
+                </div>
             </div>
-
-            <div id="operators">
-                
-                <button class="btn">-</button>
-                <button class="btn">*</button>
-                <button class="btn">/</button>
-                <button class="btn">=</button>
-            </div>
+            
         </main>
     </body>
 </html>

@@ -1,27 +1,46 @@
 body {
-    background: blue;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-h1 {
-    font-size: 25pt;
-    position: absolute;
-    top: 150px;
-    color: #fff;
+h1.title {
+    position: fixed;
+    font-size: 40pt;
+    color: rgba(255,255,255,.3);
+    top: 50px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+h1.title:hover {
+    color: rgba(255,255,255,.7);
 }
 main#container {
+    background-image: linear-gradient(to bottom right, #000428, #4e4376);
     position: absolute;
-    top: 10px;
-    width: 70%;
-    max-width: 900px;
-    height: 195%;
-    max-height: 970px; 
+    top: 0px;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
+div.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 200px;
+}
+div.column div button {
+    width: 85px;
+    height: 85px;
+    font-size: 25pt;
+}   
 button.btn {
+    background-color: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.6);
+    border-radius: 10px;
     width: 60px;
     height: 60px;
     padding: 0px;
@@ -29,4 +48,20 @@ button.btn {
     cursor: pointer;
     display: block;
     margin: 10px;
+    transition: all .3s ease-in-out; 
+}
+button.btn:hover {
+    background-color: rgba(255,255,255,.7);
+    color: #000;
+}
+
+input#display {
+    position: fixed;
+    font-size: 18pt;
+    width: 400px;
+    height: 40px;
+    background-color: rgba(255,255,255,.1);
+    top: 30%;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
 }
