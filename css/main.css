@@ -3,6 +3,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+button,
+.not-select {
+    outline: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ }
 h1.title {
     position: fixed;
     font-size: 40pt;
@@ -14,8 +25,7 @@ h1.title {
 h1.title:hover {
     color: rgba(255,255,255,.7);
 }
-main#container {
-    background-image: linear-gradient(to bottom right, #000428, #4e4376);
+main.container {
     position: absolute;
     top: 0px;
     width: 100%;
@@ -25,14 +35,26 @@ main#container {
     align-items: center;
     flex-direction: row;
 }
-div.column {
+.mainImage {
+    background-image: linear-gradient(to bottom right, #000428, #4e4376);
+}
+
+.gradient-pink {
+    background-image: linear-gradient(to bottom right,#cc2b5e ,#753a88);
+}
+.gradient-gray {
+    background-image: linear-gradient(to bottom right,#bdc3c7 , #2c3e50);
+}
+
+
+div#calculator {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     margin-top: 200px;
 }
-div.column div button {
+div#calculator div button {
     width: 85px;
     height: 85px;
     font-size: 25pt;
@@ -57,11 +79,12 @@ button.btn:hover {
 
 input#display {
     position: fixed;
-    font-size: 18pt;
+    font-size: 25pt;
     width: 400px;
     height: 40px;
-    background-color: rgba(255,255,255,.1);
+    background-color: rgba(255,255,255,.0);
     top: 30%;
     transition: all .5s ease-in-out;
-    cursor: pointer;
+    color: #fff;
+    text-align: right;
 }
