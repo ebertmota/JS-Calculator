@@ -1,0 +1,33 @@
+@media (max-width: 425px) {
+    button.btn {
+        font-size: 12pt;
+        margin: 8px;
+    }
+    input#display {
+        text-align: center;
+    }
+}
+
+@media (max-width: 416px) {
+    div#calculator div button {
+        width: 70px;
+        height: 70px;
+        font-size: 18pt;
+    }
+    input#display {
+        text-align: center;
+    }
+}
+
+@media (max-width: 354px) {
+    div#calculator div button {
+        width: 60px;
+        height: 60px;
+    }
+    h1.title {
+        font-size: 25pt;
+    }
+    input#display {
+        text-align: center;
+    }
+}
