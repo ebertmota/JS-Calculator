@@ -10,35 +10,35 @@
     </head>
     <body>
         <main class="container mainImage not-select">
-        <h1 class="title" onclick="toggleTheme()">JS Calculator</h1>
+        <h1 class="title not-select" onclick="toggleTheme()">JS Calculator</h1>
         <input disabled type="text" id="display" placeholder="" autocomplete="off" >
           <div id="calculator">  
-                <div id="numbersColumn1">
+                <div id="numbersColumn1" class="not-select">
                     <button value="7" class="btn" onclick="showOnDisplay(this.value)">7</button>
                     <button value="4" class="btn" onclick="showOnDisplay(this.value)">4</button>
                     <button value="1" class="btn" onclick="showOnDisplay(this.value)">1</button>
                     <button value="0" class="btn" onclick="showOnDisplay(this.value)">0</button>
                 </div>
 
-                <div id="numbersColumn2">
+                <div id="numbersColumn2" class="not-select">
                     <button value="8" class="btn" onclick="showOnDisplay(this.value)">8</button>
                     <button value="5" class="btn" onclick="showOnDisplay(this.value)">5</button>
                     <button value="2" class="btn" onclick="showOnDisplay(this.value)">2</button>
                     <button value="+" class="btn" onclick="showOnDisplay(this.value)">+</button>
                 </div>
 
-                <div id="numbersColumns3">
+                <div id="numbersColumns3" class="not-select">
                     <button value="9" class="btn" onclick="showOnDisplay(this.value)">9</button>
                     <button value="6" class="btn" onclick="showOnDisplay(this.value)">6</button>
                     <button value="3" class="btn" onclick="showOnDisplay(this.value)">3</button>
                     <button value="C"class="btn" onclick="reset()">C</button>
                 </div>
 
-                <div id="operators">
+                <div id="operators" class="not-select">
                     <button value="-" class="btn" onclick="showOnDisplay(this.value)">-</button>
                     <button value="*" class="btn" onclick="showOnDisplay(this.value)">*</button>
                     <button value="/" class="btn" onclick="showOnDisplay(this.value)">/</button>
-                    <button value="=" class="btn" onclick="calculate()">=</button>
+                    <button value="=" class="btn" onclick="calculate()" >=</button>
                 </div>
             </div>
             
