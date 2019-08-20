@@ -9,11 +9,15 @@ function reset() {
 }
 
 function calculate() {
-    var result = 0;
-    result = display.value;
-    display.value = '';
-    display.value = eval(result);
-    
+    if (display.value == "" || display.value == "+" || display.value == "-" || 
+        display.value == "/" || display.value == "*"){
+        display.value = "Nenhum valor inserido!"
+    }else {
+        var result = 0;
+        result = display.value;
+        display.value = '';
+        display.value = eval(result);
+    }
 }
 
 const themeButton = document.getElementById('title');
