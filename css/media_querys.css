@@ -1,3 +1,15 @@
+@media (max-width: 1015px){
+    .inputBroken {
+        font-size: 40pt;
+    }
+}
+
+@media (max-width: 663px){
+    .inputBroken {
+        font-size: 25pt;
+    }
+}
+
 @media (max-width: 425px) {
     button.btn {
         font-size: 12pt;
@@ -12,6 +24,9 @@
     div#calculator div button {
         outline: 0;
         cursor: none;
+    }
+    .inputBroken {
+        font-size: 20pt;
     }
 }
 
@@ -38,6 +53,9 @@
     input#display {
         text-align: center;
         top: 35%;
+    }
+    .inputBroken {
+        font-size: 15pt;
     }
 }
 
