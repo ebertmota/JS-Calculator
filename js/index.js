@@ -18,6 +18,10 @@ function calculate() {
         display.value = '';
         display.value = eval(result);
     }
+
+    if (display.value === "Infinity"){
+        divideByZero();
+    }
 }
 
 
@@ -25,7 +29,7 @@ function calculate() {
 
 var gradientPink = "gradient-pink";
 var gradientBlue = "gradient-blue";
-const themeButton = document.getElementById('title');
+const jsTitle = document.getElementById('h1title');
 const container = document.querySelector('main');
 
 
@@ -44,4 +48,16 @@ container.addEventListener("click",function setDefaultTheme() {
 
 if (localStorage.currentTheme){                                 //  se a chave currentTheme existir no LocalStorage
     container.classList.add(localStorage.currentTheme);         //  ele coloca o valor dela como tema do container
+}
+
+// ------- if you divide by 0 --------------///
+
+function divideByZero() {
+    let calculator = document.getElementById("calculator");
+    container.classList.add('black');
+    calculator.classList.add('broken');
+    display.classList.remove('display')
+    display.classList.toggle('inputBroken');
+    display.value = "look what you made me do";
+    jsTitle.innerHTML = "Infinity"
 }
