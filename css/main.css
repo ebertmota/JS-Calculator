@@ -35,15 +35,12 @@ main.container {
     align-items: center;
     flex-direction: row;
 }
-.mainImage {
+.gradient-blue {
     background-image: linear-gradient(to bottom right, #000428, #4e4376);
 }
 
 .gradient-pink {
     background-image: linear-gradient(to bottom right,#cc2b5e ,#753a88);
-}
-.gradient-gray {
-    background-image: linear-gradient(to bottom right,#bdc3c7 , #2c3e50);
 }
 
 
@@ -70,7 +67,7 @@ button.btn {
     cursor: pointer;
     display: block;
     margin: 10px;
-    transition: all .3s ease-in-out; 
+    transition: all .1s ease-in-out; 
 }
 button.btn:hover {
     background-color: rgba(255,255,255,.7);
